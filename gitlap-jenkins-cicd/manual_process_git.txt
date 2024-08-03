@@ -1,0 +1,29 @@
+Prerequisites for One Time(For All Developers):
+ssh-keygen -t rsa -b 4096 -C "gowharyousuf820@gmail.com"
+cat ~/.ssh/id_rsa.pub
+
+Collect SSH Url of Repo example as below:
+git@gitlab.com:purtainet/meramerchant_invoiceflow/frontend/admin_panel_v1.git
+
+1. mkdir /mnt/d/apps/cmsv2api.mnserviceproviders.com/public_html
+2. cd /mnt/d/apps/cmsv2api.mnserviceproviders.com/public_html
+
+3. git init
+
+4. git status
+5. git branch
+6. git checkout -b dev
+
+7. git pull git@gitlab.com:purtainet/meramerchant_invoiceflow/frontend/admin_panel_v1.git main --allow-unrelated-histories
+8. git remote -v
+9. git remote add origin git@gitlab.com:purtainet/meramerchant_invoiceflow/frontend/admin_panel_v1.git
+
+Make Some Changes in your source code
+
+10. git add . 
+11. git commit -m "updated content uploaded" 
+12. git push --set-upstream origin dev
+
+For resseting entire process again:
+rm -rf .git
+rm -rf *
